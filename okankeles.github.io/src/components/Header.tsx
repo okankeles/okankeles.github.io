@@ -29,6 +29,12 @@ const Header: React.FC = () => {
         >
           E-mail
         </a>
+         <a
+          href="/cv.pdf"
+          className={styles.linkBox}
+        >
+          Download CV
+        </a>
       </div>
     </header>
   );
