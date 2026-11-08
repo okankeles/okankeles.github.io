@@ -1,4 +1,4 @@
-/* Genel Ayarlar ve Dark Mode Teması */
+/* General Settings and Dark Mode Theme */
 body {
     background-color: #121212;
     color: #e0e0e0;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/* Link Stilleri */
+/* Link Styles */
 a {
     color: #bb86fc;
     text-decoration: none;
@@ -25,35 +25,58 @@ a:hover {
     color: #ffffff;
 }
 
-/* Başlık ve Bölümler */
+/* Headings and Sections */
 h1, h2, h3, h4 {
     color: #ffffff;
     font-weight: 700;
 }
 
 h1 { font-size: 2.5em; margin-bottom: 0; }
-h2 { font-size: 1.5em; color: #bb86fc; margin-top: 0px; margin-bottom: 20px; font-weight: 400; }
-h3 { font-size: 1.8em; border-bottom: 2px solid #bb86fc; padding-bottom: 10px; margin-top: 40px; }
-h4 { font-size: 1.2em; }
+h2 { font-size: 1.5em; color: #bb86fc; margin-top: 5px; margin-bottom: 20px; font-weight: 400; }
+h3 { font-size: 1.8em; border-bottom: 2px solid #bb86fc; padding-bottom: 10px; margin-top: 50px; margin-bottom: 30px;}
+h4 { font-size: 1.25em; margin-top: 0; margin-bottom: 5px; color: #bb86fc; }
 
-/* Header (Giriş) Bölümü */
+/* Resume Date Style */
+.resume-date {
+    display: block;
+    color: #888888;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* Header (Hero) Section */
 header#hero {
     text-align: center;
     margin-bottom: 60px;
 }
 
 header#hero p {
-    max-width: 600px;
+    max-width: 650px;
     margin: 20px auto;
+    font-size: 1.05em;
+}
+
+header#hero .links {
+    margin-top: 25px;
 }
 
 header#hero .links a {
     margin: 0 15px;
     font-size: 1.1em;
     font-weight: bold;
+    border: 1px solid #bb86fc;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s;
 }
 
-/* Proje Kartları */
+header#hero .links a:hover {
+    background-color: #bb86fc;
+    color: #121212;
+}
+
+/* Project and Experience Cards */
 .project-card {
     background-color: #1e1e1e;
     border: 1px solid #333;
@@ -64,18 +87,19 @@ header#hero .links a {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
-.project-card h4 {
+.project-card p {
     margin-top: 0;
-    color: #bb86fc;
+    margin-bottom: 15px;
 }
 
-/* Proje linkleri için ek stil */
+/* Extra Style for Project Links */
 .project-links {
-    margin-bottom: 20px; /* Alttaki etiketlerle arasını açmak için */
+    margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 .project-links a {
@@ -92,7 +116,7 @@ header#hero .links a {
     background-color: #ffffff;
 }
 
-/* Teknoloji Etiketleri (Tags) */
+/* Technology Tags */
 .tags, .skill-list {
     margin-top: 15px;
 }
@@ -101,17 +125,24 @@ header#hero .links a {
     display: inline-block;
     background-color: #3a3a3a;
     color: #e0e0e0;
-    padding: 5px 12px;
-    border-radius: 15px; /* Daha yuvarlak etiketler */
+    padding: 6px 14px;
+    border-radius: 20px;
     font-size: 0.85em;
     margin-right: 8px;
     margin-bottom: 8px;
+    transition: background-color 0.3s;
+}
+
+.tags span:hover, .skill-list span:hover {
+    background-color: #555555;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 70px;
     font-size: 0.9em;
-    color: #777;
+    color: #666;
+    border-top: 1px solid #333;
+    padding-top: 20px;
 }
